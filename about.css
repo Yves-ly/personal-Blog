@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style.css */
+body {
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 设定标题块样式 */
+.biaotiblock{
+    padding-top: 10px;
+    height: 120px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;
+}
+
+.dabiaoti{
+    margin-left: 120px;
+    margin-top: -100px;
+    width: 650px;
+}
+
+.liuyan{
+    margin-left: 120px;
+    width: 650px;
+}
+
+/* 设定头像样式 */
+.touxiang{
+    width : 91px;
+    height : 91px;
+    border-radius : 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+/* 设定头像动画 */
+.touxiang:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* 设定跳转样式 */
+.tiaozhuan{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    width: 300px;
+}
+
+.tiaozhuan a {
+    text-decoration: none;
+    color: #474747;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* 主卡片 */
+.card {
+    margin: 120px auto;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.523);
+    border-radius: 28px;
+    display: flex;
+    box-shadow: 0 10px 20px rgba(46, 46, 46, 0.05);
+    overflow: hidden;
+}
+
+/* 左侧空白区（头像位置） */
+.profile-area {
+    background: #ffffff;
+    min-height: 400px;
+}
+
+.profile-photo{
+    margin:100px 100px 0 100px;
+    width: 200px;
+    height: 200px;
+}
+/* 右侧信息区 */
+.info-area {
+    flex: 1.8;
+    height: 700px;
+    background-color: #ffffff;
+    padding-right: 24px;
+}
+
+/* 标题 */
+.aboutme{
+    color: #2c4a6e;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#shi{
+    font-size:31px;
+    font-weight: bold;
+}
+#xu{
+    font-size:28px;
+    font-weight: 500;
+    color: #000000de;
+}
+
+#yan{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #2c4a6e;
+    line-height: 1.6;
+
+}
+
+.highlights {
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.title-block h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a2c3e;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    color: #2c4a6e;
+    font-size: 14px;
+}
+
+/* 简介文字块 */
+.write-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 0.1px solid #8a8a8a;
+}
+
+.write-block p {
+    width:36rem;
+    color: #2c4a6e;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.dandian {
+    margin-bottom: 100px;
+}
+/* 学校图片横栏（空白） */
+.school-photo{
+    display: flex;
+}
+.school-photo {
+    margin-left: 20px;
+    width:18rem;
+    height: 2.2rem;
+}
+
+/* 手机适配 */
+@media (max-width: 650px) {
+    .card {
+        flex-direction: column;
+    }
+    .avatar-area {
+        min-height: 200px;
+    }
+    .info-area {
+        padding: 24px;
+    }
+}
+
+/* 设定底部信息栏块样式 */
+.footerblock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #e8e3e3d7;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ccc;
+    
+}

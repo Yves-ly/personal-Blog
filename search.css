@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 设定标题块样式 */
+.biaotiblock{
+    padding-top: 10px;
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;
+}
+
+.dabiaoti{
+    margin-left: 120px;
+    margin-top: -100px;
+    width: 650px;
+}
+
+.liuyan{
+    margin-left: 120px;
+    width: 650px;
+}
+
+/* 设定头像样式 */
+.touxiang{
+    width : 91px;
+    height : 91px;
+    border-radius : 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+/* 设定头像动画 */
+.touxiang:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* 设定跳转样式 */
+.tiaozhuan{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    width: 300px;
+}
+
+.tiaozhuan a {
+    text-decoration: none;
+    color: #474747;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+body {
+    background: #f9f9f9e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 0.4s ease;
+}
+/* 搜索区域容器 — 让搜索框位于中上侧 */
+.searchblock {
+    width: 100%;
+    max-width: 780px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* 标题小字 */
+.searchhead{
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 450;
+    letter-spacing: -0.2px;
+    color: #4f6f8f;
+    background: transparent;
+}
+
+/* 搜索框外层 */
+.search-wrapper {
+    width: 100%;
+    background: transparent;
+    border-radius: 56px;
+}
+
+/* 输入搜索*/
+.search-input {
+    width: 100%;
+    padding: 1.25rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 450;
+    background-color: #ffffff;      /* 白灰基底 */
+    border: 1px solid #dce3ec;
+    border-radius: 60px;
+    outline: none;
+    color: #1e2f3e;
+    transition: all 0.2s ease;
+    /* 关键：内阴影 + 轻微外光，制造“陷下去”的视觉 */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03), 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+/* 聚焦时凹陷感略微加深，更立体 */
+.search-input:focus {
+    border-color: #b9cadc;
+    background-color: #ffffff;
+    box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.07), 0 1px 1px rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+/* 占位符颜色柔和 */
+.search-input::placeholder {
+    color: #98a9bc;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+}
+
+/* 辅助提示：增加细节层次感，同时保持凹陷设计氛围 */
+.search-tip {
+    margin-top: 1.8rem;
+    margin-bottom: 35rem;
+    font-size: 0.8rem;
+    color: #6f8eae;
+    display: inline-block;
+}
+
+/* 移动端适配：保证陷落感依旧清晰 */
+@media (max-width: 640px) {
+    .search-hero {
+        padding-top: 12vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .search-input {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    .search-tip {
+        font-size: 0.75rem;
+        margin-top: 1.2rem;
+    }
+}
+
+/* 设定底部信息栏块样式 */
+.footerblock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #e8e3e3d7;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ccc;
+    
+}
