@@ -1,0 +1,141 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* 设定标题块样式 */
+.biaotiblock{
+    padding-top: 10px;
+    height: 120px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;
+}
+
+.dabiaoti{
+    margin-left: 120px;
+    margin-top: -100px;
+    width: 650px;
+}
+
+.liuyan{
+    margin-left: 120px;
+    width: 650px;
+}
+
+/* 设定头像样式 */
+.touxiang{
+    width : 91px;
+    height : 91px;
+    border-radius : 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+/* 设定头像动画 */
+.touxiang:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* 设定跳转样式 */
+.tiaozhuan{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    width: 300px;
+}
+
+.tiaozhuan a {
+    text-decoration: none;
+    color: #474747;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* 设定目录块样式 */
+.mulublock{
+    width: 120px;
+    height: 100vh;
+    padding-top: 15px;
+    background-color: #ffffff;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    overflow: auto;
+}
+
+.mulublock a:visited { color: #474747; }
+
+.mulublock li {
+    display: flex;
+    align-items: flex-start;
+    line-height: 2;
+    margin-left: 6px;
+}
+
+.mulublock li::before {
+    content: "•";  
+    width: 20px;   
+}
+
+/* 设定目录和内容的父容器块 */
+.bigneirongblock{
+    display: flex;
+}
+
+/* 设定所有内容的父容器块 */
+.neirongblock2{
+    flex: 1;
+}
+
+/* 设定个人作品块样式 */
+.zuopingblock{
+    padding: 5px;
+    margin-left: 10px;
+    height: 300px;
+    overflow: auto;
+}
+
+/* 设定博客块样式 */
+.bokeblock{
+    padding: 5px;
+    margin-left: 10px;
+    height: 620px;
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+}
+
+/* 设定底部信息栏块样式 */
+.footerblock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #e8e3e3d7;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #ccc;
+    
+}
