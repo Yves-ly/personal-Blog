@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端大小适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+         <!-- 链入css和js -->
+        <link rel="stylesheet" href="css/boke.css" type="text/css">
+        <script src="javascript/boke.js" defer></script>
+        <!-- 减少闪烁 -->
+        <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.write('<style>body{background:#2a2a2a;}</style>');
+        }
+        </script>
+        <title>独抒己见</title> 
+</head>
+
+<body>
+    <button id="theme-buttom-ID" class="theme-buttom-CL" title="切换主题~">🌙</button>
+    <!-- 标题块，表示标题，头像，留言和跳转链接 -->
+    <div class = "biaotiblock">
+        <img src="Photo/ProfilePicture/Yves.png" alt="头像" class="touxiang">
+        <h1 class = "dabiaoti">朝文夕拾</h1>
+        <p class = "liuyan">欢迎来访！</p>
+        <div class="tiaozhuan">
+            <a href="home.html" class="zhuye">主页</a>
+            <a href="boke.html" class="about">博客</a>
+            <a href="touch.html" class="touch">联系</a>
+            <a href="search.html" class="search">搜索</a>
+        </div>
+    </div>
+
+    <!-- 目录和内容父容器块 -->
+    <div class = "bigneirongblock">
+        <!-- 目录块，展示页面目录 -->
+        <div class = "mulublock">
+            <h3>目录:</h3>
+            <br>
+            <ul>
+                <li><a href="#section1">作品</a></li>
+                <li><a href="#section2">博客</a></li>
+                <li><a href="#section3">说明</a></li>
+                <li><a href="#section4">历史</a></li>
+            </ul>
+        </div>
+
+        <!-- 所有内容的父容器块 -->
+        <div class = "neirongblock2">
+                <!-- 作品块,展示个人项目 -->
+            <div class = "zuopingblock" id = "personal-container" title="如无内容，则因为本地安全限制导致不显示">
+               <!-- 由js根据json内容动态生成 -->
+            </div>
+
+                <!-- 博客块,展示博客内容 -->
+            <div class = "bokeblock" id = "boke-container" title="如无内容，则因为本地安全限制导致不显示">
+                <!-- 由js根据json内容动态生成 -->
+            </div>
+
+                <!-- 说明块，展示一些说明内容 -->
+            <div class = "stepsblock" id = "steps-container" title="如无内容，则因为本地安全限制导致不显示">
+                <!-- 由js根据json内容动态生成 -->
+            </div>
+
+                <!-- 历史块，展示博客历史版本 -->
+            <div class = "historyblock" id = "history-container" title="如无内容，则因为本地安全限制导致不显示">
+                <!-- 由js根据json内容动态生成 -->
+            </div>
+        </div>
+    </div>
+        
+    <!-- 底部信息栏块 -->
+    <div class = "footerblock">
+        <p>这是底部信息栏</p>
+    </div>
+</body>
+</html>

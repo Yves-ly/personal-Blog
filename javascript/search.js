@@ -12,9 +12,9 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
-// 黑白主题切换
+//---黑白主题切换---
 // 获取按钮
-const btn = document.getElementById('theme-buttom');
+const btn = document.getElementById('theme-buttom-ID');
 
 // 页面加载时读取存储
 if (localStorage.getItem('theme') === 'dark') {
