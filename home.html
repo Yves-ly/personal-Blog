@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配手机端大小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝文夕拾</title>
+    <!-- 链入css和js -->
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <script src="javascript/home.js" defer></script>
+    <!-- 减少闪烁 -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.write('<style>body{background:#2a2a2a;}</style>');
+        }
+    </script>
+</head>
+<body>
+    <button id="theme-buttom-ID" class="theme-buttom-CL" title="切换主题~">🌙</button>
+    <div class = "biaotiblock">
+        <img src="Photo/ProfilePicture/Yves.png" alt="头像" class="touxiang">
+        <h1 class = "dabiaoti">朝文夕拾</h1>
+        <p class = "liuyan">且将新火试新茶</p>
+        <div class="tiaozhuan">
+            <a href="home.html" class="home">主页</a>
+            <a href="boke.html" class="about">博客</a>
+            <a href="touch.html" class="touch">联系</a>
+            <a href="search.html" class="search">搜索</a>
+        </div>
+    </div>
+    
+    <!-- 整体介绍块1 -->
+    <div class="card">
+        <div class="profile-area">
+            <img src="Photo/ProfilePicture/Back view.png" alt="工作头像" class="profile-photo1">
+        </div>
+
+        <!-- 右侧区域：标题 + 简介 + 学校图片横栏 -->
+        <div class="info-area">
+            <!-- 第一块：标题 -->
+            <div class="title-block">
+                <p class="aboutme">/技能</p>
+                <h1 id="shi">HTML，CSS，JS，VUE...</h1>
+                <h1 id = "xu">我是您的有力工具</h1>
+                <p class="subtitle">培训成本较低 / 自主学习性强</p>
+            </div>
+
+            <!-- 第二块：小字个人简介 -->
+            <div class="write-block">
+                <div class="dandian">
+                    <p id="yan">我能按需干活，能自我更新，能团队合作。<br>您给我<span class="highlights">实践机会</span>，我给您转换价值。<span class="highlights">一个有力的助手</span>来分担杂务，往往能够让主力成员有更多的精力付诸于更重要的任务。</p>
+                    <p>●我拥有HTMl，CSS，JS和vue框架等前端开发工具的基础知识。</p>
+                    <p>●了解工作流程中Git命令行的使用，能够作为助手在团队中合作。</p>
+                    <p>●具有工程意识和版本管理意识，了解基本流程，无需从头教起</p>
+                    <p>●学历不出众并不代表能力不够好，我相信用人单位需要的是能干活，成本低，转换高的<u>实践型人才</u>。</p>
+                </div>
+            </div>
+
+            <!-- 第三块：空白横栏块 (后期插入学校图片) -->
+            <div class="school-bar">
+                <img src="Photo/school.png" alt="学校图片" class="school-photo">
+            </div>
+        </div>
+    </div>
+
+    <!-- 整体介绍块2 -->
+    <div class="card">
+        <div class="profile-area">
+            <img src="Photo/ProfilePicture/Work ID.png" alt="个人头像" class="profile-photo2">
+        </div>
+
+        <!-- 右侧区域：标题 + 简介 + 学校图片横栏 -->
+        <div class="info-area">
+            <!-- 第一块：标题 -->
+            <div class="title-block">
+                <p class="aboutme">/关于我</p>
+                <h1 id="shi">信息，处理，决策，</h1>
+                <h1 id = "xu">现代化助力逻辑运转。</h1>
+                <p class="subtitle">前端开发学习者 / 乐于创造探索</p>
+            </div>
+
+            <!-- 第二块：小字个人简介 -->
+            <div class="write-block">
+                <p id="yan">你好，我毕业于<span class="highlights">广东食品药品职业学院</span>,学习卫生信息管理。善于管理数据信息并转化为决策参考信息,乐于用现代化方法将数据转化为有利信息。我始终认为在这大数据和AI盛行的时代,有价值的信息才是数据运转和决策部署的根本.</p>
+                <div class="dandian">
+                    <p>●我叫<u>杨梓童</u>,掌握HTML/CSS/Js前端三大件和python等开发工具。</p>
+                    <p>●认证细致，乐于探索人与机器的交互，让产品更有温度</p>
+                    <p>●目前主要使用 Vue 以及现代 CSS 构建 Web 应用，也在持续学习后端技术。</p>
+                    <p>●同时能够使用Python，Mysql等工具进行数据管理</p>
+                    <p>●我相信简洁、清晰、有温度的代码能创造更好的产品。</p>
+                </div>
+            </div>
+
+            <!-- 第三块：空白横栏块 (后期插入学校图片) -->
+            <div class="school-bar">
+                <img src="Photo/school.png" alt="学校图片" class="school-photo">
+            </div>
+        </div>
+    </div>
+        <!-- 底部信息栏块 -->
+    <div class = "footerblock">
+        <p>这是底部信息栏</p>
+    </div>
+</body>
+</html>
