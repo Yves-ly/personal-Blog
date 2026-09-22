@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>东搜西罗</title>
+     <!-- 链入css和js -->
+    <link rel="stylesheet" href="css/search.css" type="text/css">
+    <script src="javascript/search.js" defer></script>
+     <!-- 减少闪烁 -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.write('<style>body{background:#2a2a2a;}</style>');
+        }
+    </script>
+</head>
+
+<body>
+    <button id="theme-buttom-ID" class="theme-buttom-CL" title="切换主题~">🌙</button>
+    <!-- 标题块，表示标题，留言信息，头像 -->
+    <div class = "biaotiblock">
+        <img src="Photo/ProfilePicture/Yves.png" alt="头像" class="touxiang">
+        <h1 class = "dabiaoti">朝文夕拾</h1>
+        <p class = "liuyan">众里寻他千百度</p>
+        <div class="tiaozhuan">
+            <a href="home.html" class="zhuye">主页</a>
+            <a href="boke.html" class="about">博客</a>
+            <a href="touch.html" class="touch">联系</a>
+            <a href="search.html" class="search">搜索</a>
+        </div>
+    </div>
+
+    <div class="searchblock">
+        <div class="searchhead">
+            🔍 全站内容探索
+        </div>
+
+        <!-- 搜索框核心区域 -->
+        <div class="search-wrapper">
+            <input type="text" class="search-input" 
+                   placeholder="搜索文章、项目或想法..." 
+                   aria-label="全局搜索框">
+        </div>
+
+        <!-- 提示浏览器搜索 -->
+        <div class="search-tip">
+            Ctrl+K · 唤出浏览器搜索
+        </div>
+    </div>
+    
+        <!-- 底部信息栏块 -->
+    <div class = "footerblock">
+        <p>这是底部信息栏</p>
+    </div>
+</body>
+</html>
