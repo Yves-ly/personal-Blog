@@ -1,0 +1,92 @@
+{
+  "header": {
+    "title": "Echoes at Dawn and Dusk",
+    "slogan": "Even newcomers can be put to good use",
+    "nav": {
+      "home": "Home",
+      "boke": "Blog",
+      "touch": "Contact",
+      "search": "Search"
+    }
+  },
+  "touch": {
+    "heading": "/Contact me:",
+    "email": "Email",
+    "qq": "QQ",
+    "wechat": "WeChat / Phone",
+    "sendEmail": "Send Email →",
+    "chatQQ": "Chat on QQ →",
+    "contactWeChat": "Contact WeChat →",
+    "popupTitle": "📬 Contact Info",
+    "popupWelcome": "Feel free to contact me:",
+    "mailNote": "Please note your intention",
+    "qqNote": "Please note your intention when adding",
+    "wechatNote": "Phone and WeChat are the same, please note your intention"
+  },
+  "search": {
+    "head": "🔍 Explore the whole site",
+    "placeholder": "Search articles, projects or ideas...",
+    "tip": "Press Enter to search",
+    "tipShortcut": "Ctrl+K to open browser search",
+    "searching": "Searching...",
+    "emptyPrompt": "Please enter a keyword and press Enter",
+    "enterToSearch": "Press Enter to search \"{kw}\"",
+    "noResult": "Sorry, no results found for \"{kw}\". Try another keyword."
+  },
+  "editor": {
+    "myBlog": "My Blog",
+    "newPost": "+ New",
+    "titlePlaceholder": "Enter title",
+    "contentPlaceholder": "Write Markdown here...",
+    "categoryWorks": "Works",
+    "categoryBlog": "Blog",
+    "categoryInfo": "Info",
+    "categoryHistory": "History",
+    "categoryLog": "Log",
+    "save": "Save",
+    "saving": "Saving...",
+    "delete": "Delete",
+    "logout": "Log out",
+    "preview": "Preview",
+    "updateSuccess": "Updated successfully",
+    "createSuccess": "Created successfully",
+    "deleteSuccess": "Deleted successfully",
+    "emptyError": "Title and content cannot be empty",
+    "confirmDelete": "Are you sure you want to delete this post?"
+  },
+  "boke": {
+    "catalog": "Catalog:",
+    "works": "Works",
+    "blog": "Blog",
+    "info": "Info",
+    "history": "History",
+    "log": "Log",
+    "emptyWorks": "No works yet",
+    "emptyBlog": "No blog posts yet",
+    "emptyInfo": "No info yet",
+    "emptyHistory": "No history yet",
+    "emptyLog": "No logs yet"
+  },
+  "home": {
+    "skills": "/Skills",
+    "skillTitle1": "HTML, CSS, JS, VUE...",
+    "skillTitle2": "I am your capable assistant",
+    "skillSubtitle": "Low training cost / Strong self-learning",
+    "skillIntro": "I work on demand, keep myself updated, and collaborate in teams.<br>Give me a <span class=\"highlights\">chance</span>, I will return value. <span class=\"highlights\">A capable assistant</span> handling chores lets core members focus on what truly matters.",
+    "skillPoint1": "● Solid fundamentals in HTML, CSS, JS, and the Vue framework.",
+    "skillPoint2": "● Hands-on <u>personal projects</u> including a website and a WeChat mini-program.",
+    "skillPoint3": "● Familiar with Git CLI workflows and GitHub, able to collaborate as an assistant.",
+    "skillPoint4": "● <u>Engineering-minded</u> with version control awareness, no need to start from scratch.",
+    "skillPoint5": "● A modest education does not mean a lack of ability. Companies need <u>practical talents</u> who can deliver with low cost and high return.",
+    "about": "/About Me",
+    "aboutTitle1": "Information, Processing, Decisions,",
+    "aboutTitle2": "Modern tools power logical operations.",
+    "aboutSubtitle": "Front-end learner / Love to create and explore",
+    "aboutIntro": "Hello, I graduated from <span class=\"highlights\">Guangdong Food and Drug Vocational College</span>, majoring in Health Information Management. I am good at managing data and turning it into decision-supporting information. In this era of big data and AI, I believe valuable information is the foundation of data operations and decision-making.",
+    "aboutPoint1": "● My name is <u>Yang Zitong</u>. I master HTML/CSS/JS and Python and other development tools.",
+    "aboutPoint2": "● Detail-oriented, and keen on exploring human-machine interaction to make products warmer.",
+    "aboutPoint3": "● Currently building web apps with Vue and modern CSS, and continuously learning backend technologies.",
+    "aboutPoint4": "● Also able to manage data with Python, MySQL and other tools.",
+    "aboutPoint5": "● I believe that clean, clear and warm code creates better products."
+  }
+}
