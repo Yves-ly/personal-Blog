@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 应用根容器 */
+#app {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 页面滑入动画 */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+body {
+  animation: slideIn 0.4s ease;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 深色模式统一修改 */
+/* 日间模式 */
+:root {
+  /* 基础 */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #ccc;
+  
+  /* 卡片/区块背景 */
+  --card-bg: rgba(255, 255, 255, 0.523);
+  --block-bg: linear-gradient(
+    to bottom,
+    rgba(192, 254, 176, 0.3),
+    rgba(226, 250, 221, 0.1),
+    transparent 100%
+  );
+  
+  /* 标题与文字 */
+  --title-color: #0b1c0e;
+  --subtitle-color: #2d6e2c;
+  --text-green: #346e2c;
+  --text-highlight: #000000;
+  
+  /* 链接 */
+  --link-color: #415a44;
+  --link-hover: #2d6e2c;
+  --header-link-color: #474747;
+  --mulublock-link-color: #415a44;
+  
+  /* 目录/侧边栏 */
+  --mulublock-bg: linear-gradient(
+    to bottom,
+    rgba(224, 245, 219, 0.3),
+    rgba(226, 250, 221, 0.1),
+    transparent 100%
+  );
+  --mulublock-border: #ccc;
+  
+  /* 页头/页脚 */
+  --header-bg: linear-gradient(
+    to bottom,
+    rgba(192, 254, 176, 0.3),
+    rgba(226, 250, 221, 0.1),
+    transparent 100%
+  );
+  --footer-bg: #e8e3e3d7;
+  --footer-border: #ccc;
+  
+  /* 搜索框 */
+  --search-bg: #ffffff;
+  --search-border: #dce3ec;
+  --search-text: #1f3e1e;
+  --search-placeholder: #adbc98;
+  --search-head: #608f4f;
+  --search-tip: #83ae6f;
+  
+  /* 阴影 */
+  --box-shadow: 0 5px 20px rgba(46, 46, 46, 0.05);
+  --block-shadow: 0 0 15px 3px rgba(104, 103, 103, 0.3);
+}
+
+/* 夜间模式 */
+body.dark {
+  /* 基础 */
+  --bg-color: #2a2a2a;
+  --text-color: #ffffff;
+  --border-color: #444;
+  
+  /* 卡片/区块背景 */
+  --card-bg: rgba(42, 42, 42, 0.8);
+  --block-bg: linear-gradient(
+    to bottom,
+    rgba(46, 46, 46, 0.8),
+    rgba(42, 42, 42, 0.5),
+    transparent 100%
+  );
+  
+  /* 标题与文字 */
+  --title-color: #e0e0e0;
+  --subtitle-color: #a0e0a0;
+  --text-green: #a0e0a0;
+  --text-highlight: #ffffff;
+  
+  /* 链接 */
+  --link-color: #e0e0e0;
+  --link-hover: #a0e0a0;
+  --header-link-color: #ffffff;
+  --mulublock-link-color: #ffffff;
+  
+  /* 目录/侧边栏 */
+  --mulublock-bg: linear-gradient(
+    to bottom,
+    rgba(46, 46, 46, 0.8),
+    rgba(42, 42, 42, 0.5),
+    transparent 100%
+  );
+  --mulublock-border: #444;
+  
+  /* 页头/页脚 */
+  --header-bg: linear-gradient(
+    to bottom,
+    rgba(46, 46, 46, 0.8),
+    rgba(42, 42, 42, 0.5),
+    transparent 100%
+  );
+  --footer-bg: #1f1f1f;
+  --footer-border: #444;
+  
+  /* 搜索框 */
+  --search-bg: #1f1f1f;
+  --search-border: #444;
+  --search-text: #e0e0e0;
+  --search-placeholder: #666;
+  --search-head: #a0e0a0;
+  --search-tip: #a0e0a0;
+  
+  /* 阴影 */
+  --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  --block-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+}
